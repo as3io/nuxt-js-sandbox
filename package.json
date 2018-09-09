@@ -11,13 +11,14 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "nuxt": "^1.4.2"
+  },
+  "devDependencies": {
     "babel-eslint": "^9.0.0",
     "eslint": "^5.5.0",
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-loader": "^2.1.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-vue": "^4.7.1",
-    "nuxt": "^1.4.2",
-    "prettier": "^1.14.2"
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3"
   }
 }
