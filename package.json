@@ -5,5 +5,11 @@
   "repository": "https://github.com/as3io/nuxt-js-sandbox.git",
   "author": "Jacob Bare <jacob@limit0.io>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.2"
+  }
 }
