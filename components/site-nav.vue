@@ -7,7 +7,21 @@
   >
     <b-navbar-brand to="/">Officer</b-navbar-brand>
     <b-navbar-nav class="mr-auto">
-      <b-nav-item to="/section">Section</b-nav-item>
+      <b-nav-item
+        v-for="section in sections"
+        :key="section.id"
+        :to="'/sections/' + section.alias"
+      >
+        {{ section.name }}
+      </b-nav-item>
     </b-navbar-nav>
   </b-navbar>
 </template>
+
+<script>
+export default {
+  props: {
+    sections: { type: Array, required: true },
+  },
+};
+</script>
