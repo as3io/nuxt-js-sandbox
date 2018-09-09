@@ -10,7 +10,7 @@
       <b-nav-item
         v-for="section in sections"
         :key="section.id"
-        :to="'/sections/' + section.alias"
+        :to="'/section/' + section.id"
       >
         {{ section.name }}
       </b-nav-item>
