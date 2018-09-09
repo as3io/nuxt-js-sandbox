@@ -4,3 +4,18 @@
     <small>Return <nuxt-link to="/">Home</nuxt-link></small>
   </article>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      title: 'Article',
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+    };
+  },
+};
+</script>
