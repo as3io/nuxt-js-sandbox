@@ -26,6 +26,7 @@ module.exports = {
    */
   modules: [
     'bootstrap-vue/nuxt',
+    '@nuxtjs/apollo'
   ],
 
   /**
@@ -49,5 +50,14 @@ module.exports = {
      *
      */
     htmlAttrs: { lang: 'en', dir: 'ltr' },
+  },
+
+  /**
+   *
+   */
+  apollo: {
+    clientConfigs: {
+      default: '~/plugins/apollo.js',
+    },
   },
 };
