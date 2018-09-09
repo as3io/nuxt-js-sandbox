@@ -1,0 +1,20 @@
+query SectionPage($contentInput: WebsiteScheduledPlatformContentQuery!, $sectionInput: ModelIdInput!) {
+  websiteSection(input: $sectionInput) {
+    id
+    name
+  }
+	websiteScheduledPlatformContent(input: $contentInput) {
+		edges {
+			cursor
+			node {
+				id
+				content {
+					id
+					name
+					type
+          slug
+				}
+			}
+		}
+	}
+}
